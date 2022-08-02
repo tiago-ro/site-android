@@ -34,48 +34,60 @@ body{
 }
 
 header{
-    height: 150px;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    
 }
 header>h1{
-    padding: 30px;
+    font-size: 3em;
     font-family: var(--font-destaque);
     font-weight: normal;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.407);
-    text-align: center;
-    color: white;     
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    color: white;   
+    margin-bottom: 20px;
+    
 }
 header>p{
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
-    text-align: center;
     color: white;
     font-family: var(--font-padrao);
+    font-size: 1.2em;
+    padding: 0px 10px 0px 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    
 }
 nav{
     background-color: var(--cor5);
-    height: 25px;
-    
+    padding: 10PX;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+
 }
 nav  a {
-    font-family: var(--font-padrao);
-    padding: 5px;
+    font-weight: bold;
+    padding: 10px;
     color: white;
     text-decoration: none;
-    margin-left: 10px;
     border-radius: 5px;
-    
+    transition-duration: 0.5s;
 }
 nav a:hover{
     background-color: var(--cor3);
-    color: var(--cor4);
-    transition-duration: 0.5s;
+    color: var(--cor5);
+    
 }
 main{
-    background-color: white;
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 0px 0px 15px 15px ;
+    
 } 
 main h1{
     font-family: var(--font-android);
@@ -85,6 +97,12 @@ main h2{
 }
 main img {
     width: 100%;
+
+}
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
 
 }
 footer{
